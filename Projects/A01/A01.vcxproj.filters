@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Base">
+      <UniqueIdentifier>{396782cc-1f56-4bf2-8d2d-151153273027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Base">
+      <UniqueIdentifier>{c9b38224-7062-4f6d-ae4e-83199a7cc684}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Json">
+      <UniqueIdentifier>{21ba4e95-ee37-41b7-9132-14cc34e458fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Json">
+      <UniqueIdentifier>{0f502b5a-77bb-4010-8164-3ca9669bf41e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Logoner.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Base\BackDialogBase.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Base\ForeDialogBase.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LogonerBackDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LogonerForeDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Explorer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Base\ImgButton.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Setting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Json\json.h">
+      <Filter>头文件\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Json\json-forwards.h">
+      <Filter>头文件\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\CheckSpeadThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\LoadSettingThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Base\CusStatic.h">
+      <Filter>头文件\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\GetIPAddrThread.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\BaseClient.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\HttpClient.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\HttpsClient.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\MD5.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Base\BackDialogBase.cc">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Base\ForeDialogBase.cc">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LogonerBackDialog.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LogonerForeDialog.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Explorer.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Logoner.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Base\ImgButton.cc">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Setting.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Json\jsoncpp.cpp">
+      <Filter>源文件\Json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Utils.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CheckSpeadThread.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LoadSettingThread.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Base\CusStatic.cc">
+      <Filter>源文件\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\GetIPAddrThread.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\BaseClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HttpClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\HttpsClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\MD5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Res\A01\ResourceScript.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Res\ResourceScript.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\Res\A01\XUpdate.exe">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\Res\A01\cert.pem">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\Res\A01\key.pem">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Res\A01\Icon.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\BG01.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\BG01.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButExit1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButExit2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButMinisize1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButMinisize2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButMatchBG.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButBg1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\Icon1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\Icon2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\Icon3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\Icon4.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButMatchBG.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ProgressBar1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ProgressBar2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ProgressBar3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\MatchPageBG.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\Text1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\Line1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButMatchBG11.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButMatchBG12.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButMatchBG21.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButMatchBG22.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButLoginBG.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\ButBg2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\B1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\B2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\B3.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\B4.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\B5.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\Success.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="..\..\Res\A01\Error.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

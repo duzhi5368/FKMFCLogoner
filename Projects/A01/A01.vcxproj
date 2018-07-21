@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{88BC2BFE-BA9C-4B0A-BDB1-52986A8606EC}</ProjectGuid>
+    <RootNamespace>A01</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(OutDir)tmp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(OutDir)tmp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(OutDir)tmp\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\$(ProjectName)\</OutDir>
+    <IntDir>$(OutDir)tmp\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;JSON_IS_AMALGAMATION;A01_CONFIG;WIN32;_WINDOWS;_DEBUG;CURL_STATICLIB;USE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>version.lib;uafxcwd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>JSON_IS_AMALGAMATION;A01_CONFIG;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>version.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;JSON_IS_AMALGAMATION;A01_CONFIG;WIN32;_WINDOWS;NDEBUG;CURL_STATICLIB;USE_OPENSSL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>version.lib;uafxcw.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>if exist "$(SolutionDir)release\$(TargetName)\" (
+    rmdir /s/q "$(SolutionDir)release\$(TargetName)\"
+)
+
+mkdir "$(SolutionDir)release\$(TargetName)\"
+
+"$(SolutionDir)upx.exe" -9 "$(OutDir)$(TargetName)$(TargetExt)" -o "$(SolutionDir)release\$(TargetName)\A01$(TargetExt)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>JSON_IS_AMALGAMATION;A01_CONFIG;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>if exist "$(SolutionDir)release\$(TargetName)\" (
+    rmdir /s/q "$(SolutionDir)release\$(TargetName)\"
+)
+
+mkdir "$(SolutionDir)release\$(TargetName)\"
+
+"$(SolutionDir)upx.exe" -9 "$(OutDir)$(TargetName)$(TargetExt)" -o "$(SolutionDir)release\$(TargetName)\A01$(TargetExt)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\BaseClient.h" />
+    <ClInclude Include="..\..\Source\Base\BackDialogBase.h" />
+    <ClInclude Include="..\..\Source\Base\CusStatic.h" />
+    <ClInclude Include="..\..\Source\Base\ForeDialogBase.h" />
+    <ClInclude Include="..\..\Source\Base\ImgButton.h" />
+    <ClInclude Include="..\..\Source\CheckSpeadThread.h" />
+    <ClInclude Include="..\..\Source\config.h" />
+    <ClInclude Include="..\..\Source\Explorer.h" />
+    <ClInclude Include="..\..\Source\GetIPAddrThread.h" />
+    <ClInclude Include="..\..\Source\HttpClient.h" />
+    <ClInclude Include="..\..\Source\HttpsClient.h" />
+    <ClInclude Include="..\..\Source\Json\json-forwards.h" />
+    <ClInclude Include="..\..\Source\Json\json.h" />
+    <ClInclude Include="..\..\Source\LoadSettingThread.h" />
+    <ClInclude Include="..\..\Source\Logoner.h" />
+    <ClInclude Include="..\..\Source\LogonerBackDialog.h" />
+    <ClInclude Include="..\..\Source\LogonerForeDialog.h" />
+    <ClInclude Include="..\..\Source\MD5.h" />
+    <ClInclude Include="..\..\Source\Resource.h" />
+    <ClInclude Include="..\..\Source\Setting.h" />
+    <ClInclude Include="..\..\Source\stdafx.h" />
+    <ClInclude Include="..\..\Source\targetver.h" />
+    <ClInclude Include="..\..\Source\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\BaseClient.cpp" />
+    <ClCompile Include="..\..\Source\Base\BackDialogBase.cc" />
+    <ClCompile Include="..\..\Source\Base\CusStatic.cc" />
+    <ClCompile Include="..\..\Source\Base\ForeDialogBase.cc" />
+    <ClCompile Include="..\..\Source\Base\ImgButton.cc" />
+    <ClCompile Include="..\..\Source\CheckSpeadThread.cc" />
+    <ClCompile Include="..\..\Source\Explorer.cc" />
+    <ClCompile Include="..\..\Source\GetIPAddrThread.cc" />
+    <ClCompile Include="..\..\Source\HttpClient.cpp" />
+    <ClCompile Include="..\..\Source\HttpsClient.cpp" />
+    <ClCompile Include="..\..\Source\Json\jsoncpp.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\LoadSettingThread.cc" />
+    <ClCompile Include="..\..\Source\Logoner.cc" />
+    <ClCompile Include="..\..\Source\LogonerBackDialog.cc" />
+    <ClCompile Include="..\..\Source\LogonerForeDialog.cc" />
+    <ClCompile Include="..\..\Source\MD5.cpp" />
+    <ClCompile Include="..\..\Source\Setting.cc" />
+    <ClCompile Include="..\..\Source\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Utils.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Res\A01\ResourceScript.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Res\A01\cert.pem" />
+    <None Include="..\..\Res\A01\key.pem" />
+    <None Include="..\..\Res\ResourceScript.rc2" />
+    <None Include="..\..\Res\A01\XUpdate.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\Res\A01\B1.bmp" />
+    <Image Include="..\..\Res\A01\B2.bmp" />
+    <Image Include="..\..\Res\A01\B3.bmp" />
+    <Image Include="..\..\Res\A01\B4.bmp" />
+    <Image Include="..\..\Res\A01\B5.bmp" />
+    <Image Include="..\..\Res\A01\BG01.bmp" />
+    <Image Include="..\..\Res\A01\BG01.png" />
+    <Image Include="..\..\Res\A01\ButBg1.bmp" />
+    <Image Include="..\..\Res\A01\ButBg2.bmp" />
+    <Image Include="..\..\Res\A01\ButExit1.bmp" />
+    <Image Include="..\..\Res\A01\ButExit2.bmp" />
+    <Image Include="..\..\Res\A01\ButLoginBG.bmp" />
+    <Image Include="..\..\Res\A01\ButMatchBG.bmp" />
+    <Image Include="..\..\Res\A01\ButMatchBG.png" />
+    <Image Include="..\..\Res\A01\ButMatchBG11.bmp" />
+    <Image Include="..\..\Res\A01\ButMatchBG12.bmp" />
+    <Image Include="..\..\Res\A01\ButMatchBG21.bmp" />
+    <Image Include="..\..\Res\A01\ButMatchBG22.bmp" />
+    <Image Include="..\..\Res\A01\ButMinisize1.bmp" />
+    <Image Include="..\..\Res\A01\ButMinisize2.bmp" />
+    <Image Include="..\..\Res\A01\Error.bmp" />
+    <Image Include="..\..\Res\A01\Icon.ico" />
+    <Image Include="..\..\Res\A01\Icon1.bmp" />
+    <Image Include="..\..\Res\A01\Icon2.bmp" />
+    <Image Include="..\..\Res\A01\Icon3.bmp" />
+    <Image Include="..\..\Res\A01\Icon4.bmp" />
+    <Image Include="..\..\Res\A01\Line1.bmp" />
+    <Image Include="..\..\Res\A01\MatchPageBG.bmp" />
+    <Image Include="..\..\Res\A01\ProgressBar1.bmp" />
+    <Image Include="..\..\Res\A01\ProgressBar2.bmp" />
+    <Image Include="..\..\Res\A01\ProgressBar3.bmp" />
+    <Image Include="..\..\Res\A01\Success.bmp" />
+    <Image Include="..\..\Res\A01\Text1.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="..\..\Res\A01\ResourceScript.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
